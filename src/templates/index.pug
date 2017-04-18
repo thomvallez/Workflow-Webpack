@@ -1,0 +1,67 @@
+doctype html
+html(lang='fr')
+  head
+    title Thomas Vallez
+    
+    link(rel='author', href='humans.txt')
+    //- Meta
+    meta(name='robots', content='all')
+    meta(charset='UTF-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='initial-scale=1, width=device-width')
+    meta(name='title', content='')
+    meta(name='description', content='')
+    meta(name='author', content='Thomas Vallez')
+    meta(name='keywords', content='')
+    //- Og
+    meta(property='og:title', content='')
+    meta(property='og:type', content='website')
+    meta(property='og:description', content='')
+    meta(property='og:url', content='http://www.thomasvallez.be/')
+    meta(property='og:image', content='http://www.thomasvallez.be/')
+    meta(property='og:site_name', content='')
+    //- Twitter Card
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:site', content='@thomvallez')
+    meta(name='twitter:creator', content='@thomvallez')
+    meta(name='twitter:title', content='')
+    meta(name='twitter:description', content='')
+    meta(name='twitter:url', content='http://www.thomasvallez.be/')
+    meta(name='twitter:image', content='http://www.thomasvallez.be/images/og/.jpg')
+    //- Load Fonts
+    link(rel='preload', href='font.woff2', as='font', type='font/woff2', crossorigin='')
+    //- script(src='https://use.typekit.net/xxxxxxx.js')
+    //- script.
+      try {
+      Typekit.load({
+      async: true
+      });
+      } catch (e) {}
+  body.no-js
+    include includes/header.pug
+    #root
+    header(role='heading')
+    nav(role='navigation')
+    //- main
+    //-   section
+    //- footer
+    //- h1 An Event Apart
+    //- section
+    //-   header
+    //-     h1 Villes
+    //-   p Rejoignez-nous en 2016 dans les villes suivantes.
+    //-   section
+    //-     header
+    //-       h1 Seattle
+    //-     p Suivez la route de brique jaune.
+    //-   section
+    //-     header
+    //-       h1 Seattle
+    //-     p Suivez la route de brique jaune.
+    //-   section
+    //-     header
+    //-       h1 Seattle
+    //-     p Suivez la route de brique jaune.
+        
+        
+  script(src='app.bundle.js')
