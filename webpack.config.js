@@ -69,18 +69,18 @@ module.exports = {
       },
       hash: true,
       excludeChunks: ['contact'],
-      // filename: './../index.html',
+      filename: 'index.html',
       // template: './src/index.html' // Load a custom template (ejs by default see the FAQ for details)
       template: './src/templates/index.pug'
     }),
     new HtmlWebpackPlugin({
       title: 'Contact Page',
-      // minify: {
-      //   collapseWhitespace: true
-      // },
+      minify: {
+        collapseWhitespace: true
+      },
       hash: true,
       chunks: ['contact'],
-      filename: 'templates/contact.pug',
+      filename: 'contact.html',
       template: './src/templates/contact.pug'
     }),
     new ExtractTextPlugin({
